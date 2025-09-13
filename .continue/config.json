@@ -1,18 +1,19 @@
 {
   "models": [
     {
-      "title": "DeepSeek Coder V2",
+      "title": "CodeLlama Executor",
       "provider": "lmstudio",
-      "model": "deepseek-coder-v2-lite-instruct",
+      "model": "codellama-7b-instruct",
       "apiBase": "http://localhost:1234/v1",
       "apiKey": "lm-studio"
     },
     {
-      "title": "DeepSeek Chat",
-      "provider": "openai",
-      "model": "deepseek-chat",
+      "title": "DeepSeek Analyst",
+      "provider": "lmstudio",
+      "model": "deepseek-coder-v2-lite-instruct",
       "apiBase": "http://localhost:1234/v1",
-      "apiKey": "lm-studio"
+      "apiKey": "lm-studio",
+      "systemMessage": "You are a cybersecurity expert. Analyze targets and suggest exact terminal commands for bug bounty hunting. Format commands ready to copy-paste."
     }
   ],
   "customCommands": [
@@ -39,9 +40,9 @@
   ],
   "tools": [
     {
-      "name": "hexstrike-ai-mcp",
-      "command": "docker",
-      "args": ["exec", "-i", "hexstrike-ai", "python3", "/app/hexstrike_mcp.py"]
+      "name": "bash",
+      "command": "cmd",
+      "args": ["/c"]
     }
   ],
   "slashCommands": [
