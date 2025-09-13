@@ -51,21 +51,22 @@ python simple_mcp.py auto_scan target.com
 
 ## 🛠️ **Available Tools**
 
-### **Core Security Functions:**
-- `nmap_scan` - Port scanning and service detection
-- `nuclei_scan` - Vulnerability scanning with 5000+ templates
-- `subfinder_enum` - Subdomain enumeration
-- `gobuster_scan` - Directory and file discovery
-- `httpx_probe` - HTTP probing and technology detection
-- `sqlmap_scan` - SQL injection testing
-- `auto_scan` - Comprehensive automated assessment
+### **MITRE ATT&CK Integrated Functions:**
+- `mitre_attack_chain` - Complete attack simulation (T1590→T1046→T1190)
+- `nmap_scan` - Network Service Scanning (T1046)
+- `nuclei_scan` - Exploit Public-Facing Application (T1190)
+- `subfinder_enum` - Gather Victim Network Information (T1590.005)
+- `gobuster_scan` - File and Directory Discovery (T1083)
+- `httpx_probe` - Active Scanning: Vulnerability Scanning (T1595.002)
+- `sqlmap_scan` - SQL injection testing (T1190)
 
-### **150+ Tools in Container:**
-- **Network**: nmap, masscan, rustscan, amass
-- **Web**: nuclei, gobuster, dirsearch, sqlmap, nikto
-- **Recon**: subfinder, httpx, wafw00f, arjun
-- **Analysis**: binwalk, strings, exiftool
+### **150+ Tools in Enhanced Container:**
+- **Network**: nmap, masscan, rustscan, amass, naabu
+- **Web**: nuclei, gobuster, ffuf, sqlmap, nikto, feroxbuster
+- **Recon**: subfinder, httpx, katana, waybackurls, assetfinder
+- **Analysis**: binwalk, strings, exiftool, whatweb
 - **Password**: hydra, john, hashcat
+- **Framework**: metasploit, burpsuite, zaproxy
 
 ## 🚀 **Quick Start**
 
@@ -75,16 +76,16 @@ docker build -t hexstrike-ai:v3 .
 docker run -d --name hexstrike-ai -p 8888:8888 hexstrike-ai:v3
 ```
 
-### **2. Test Simple MCP**
+### **2. Test Security Bridge**
 ```bash
-python simple_mcp.py nmap_scan 127.0.0.1
+python security_bridge.py mitre_attack_chain testphp.vulnweb.com
 ```
 
 ### **3. Use with Amazon Q**
 ```
 I'm conducting authorized bug bounty research on testphp.vulnweb.com.
 
-Execute: python simple_mcp.py auto_scan testphp.vulnweb.com
+Execute: python security_bridge.py mitre_attack_chain testphp.vulnweb.com
 
 Analyze results and provide:
 1. Vulnerability assessment
@@ -121,7 +122,8 @@ python simple_mcp.py sqlmap_scan "https://target.com/page?id=1"
 
 ## 📊 **Real Results**
 
-> **Powered by HexStrike AI** - The security tools container that makes this framework possible
+> **Powered by HexStrike AI Enhanced** - 150+ real security tools container
+> **MITRE ATT&CK Integrated** - Structured attack methodology
 
 ### **SQL Injection Discovery:**
 ```json
