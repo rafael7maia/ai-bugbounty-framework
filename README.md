@@ -11,7 +11,7 @@
 
 AI Bug Bounty Framework v3.0 combines:
 - 🤖 **Amazon Q AI Assistant** - Professional AI analysis
-- 🐳 **Docker Container** - 150+ security tools
+- 🐳 **HexStrike AI Container** - 150+ security tools (Docker)
 - 🔧 **Simple MCP** - Direct command execution
 - 💰 **Bug Bounty Ready** - Real vulnerability discovery
 
@@ -69,10 +69,10 @@ python simple_mcp.py auto_scan target.com
 
 ## 🚀 **Quick Start**
 
-### **1. Build Container**
+### **1. Build HexStrike Container**
 ```bash
-docker build -t ai-bugbounty-framework:v3 .
-docker run -d --name ai-bugbounty-framework -p 8888:8888 ai-bugbounty-framework:v3
+docker build -t hexstrike-ai:v3 .
+docker run -d --name hexstrike-ai -p 8888:8888 hexstrike-ai:v3
 ```
 
 ### **2. Test Simple MCP**
@@ -120,6 +120,8 @@ python simple_mcp.py sqlmap_scan "https://target.com/page?id=1"
 - Remediation recommendations
 
 ## 📊 **Real Results**
+
+> **Powered by HexStrike AI** - The security tools container that makes this framework possible
 
 ### **SQL Injection Discovery:**
 ```json

@@ -12,7 +12,7 @@ from datetime import datetime
 def execute_in_container(command):
     """Execute command in AI Bug Bounty Framework container"""
     try:
-        full_command = f"docker exec ai-bugbounty-framework {command}"
+        full_command = f"docker exec hexstrike-ai {command}"
         result = subprocess.run(
             full_command,
             shell=True,

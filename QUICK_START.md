@@ -2,10 +2,10 @@
 
 ## ⚡ 3-Step Setup
 
-### 1. Build Docker Container
+### 1. Build HexStrike Container
 ```bash
-docker build -t ai-bugbounty-framework:v3 .
-docker run -d --name ai-bugbounty-framework -p 8888:8888 ai-bugbounty-framework:v3
+docker build -t hexstrike-ai:v3 .
+docker run -d --name hexstrike-ai -p 8888:8888 hexstrike-ai:v3
 ```
 
 ### 2. Test MCP Script
@@ -17,7 +17,7 @@ python simple_mcp.py nmap_scan testphp.vulnweb.com
 Copy prompts from `AMAZON_Q_PROMPTS.md` and start analyzing!
 
 ## 🎯 Architecture
-- **Docker Container**: 150+ security tools
+- **HexStrike AI Container**: 150+ security tools (Docker)
 - **Simple MCP**: Python script for tool execution  
 - **Amazon Q**: AI analysis and reporting
 
