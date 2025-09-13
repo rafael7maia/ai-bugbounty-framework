@@ -1,4 +1,4 @@
-# 🤖 Amazon Q Prompts - HexStrike AI v3.0
+# 🤖 Amazon Q Prompts - AI Bug Bounty Framework v3.0
 
 ## 🎯 **PROMPTS OTIMIZADOS PARA AMAZON Q**
 
@@ -189,7 +189,7 @@ Format: Professional security report
 
 ### **Time Efficiency:**
 - **Manual Testing**: 4-8 hours
-- **HexStrike + Amazon Q**: 30-60 minutes
+- **AI Bug Bounty Framework + Amazon Q**: 30-60 minutes
 - **Improvement**: 8-16x faster
 
 ### **Quality Improvement:**

@@ -1,6 +1,6 @@
-# 🚀 HexStrike AI Enhanced v3.0 - Amazon Q Integration
+# 🚀 AI Bug Bounty Framework v3.0 - Amazon Q Integration
 
-> **AI-Powered Penetration Testing with Amazon Q + Docker + Simple MCP**
+> **AI-Powered Bug Bounty Methodology with Amazon Q + Docker + Simple MCP**
 
 [![Amazon Q](https://img.shields.io/badge/Amazon%20Q-AI%20Assistant-orange)](https://aws.amazon.com/q/)
 [![Docker](https://img.shields.io/badge/Docker-Container-blue)](https://docker.com)
@@ -9,7 +9,7 @@
 
 ## 📋 **Overview**
 
-HexStrike AI v3.0 combines:
+AI Bug Bounty Framework v3.0 combines:
 - 🤖 **Amazon Q AI Assistant** - Professional AI analysis
 - 🐳 **Docker Container** - 150+ security tools
 - 🔧 **Simple MCP** - Direct command execution
@@ -20,7 +20,7 @@ HexStrike AI v3.0 combines:
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │   Amazon Q      │    │   Simple MCP     │    │  Docker         │
-│   AI Assistant  │◄──►│   Python Script  │◄──►│  HexStrike AI   │
+│   AI Assistant  │◄──►│   Python Script  │◄──►│  Security Tools │
 │   (VS Code)     │    │   (Direct Exec)  │    │  (150+ Tools)   │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
          ▲                        ▲                        ▲
@@ -71,8 +71,8 @@ python simple_mcp.py auto_scan target.com
 
 ### **1. Build Container**
 ```bash
-docker build -t hexstrike-ai:v3 .
-docker run -d --name hexstrike-ai -p 8888:8888 hexstrike-ai:v3
+docker build -t ai-bugbounty-framework:v3 .
+docker run -d --name ai-bugbounty-framework -p 8888:8888 ai-bugbounty-framework:v3
 ```
 
 ### **2. Test Simple MCP**
@@ -207,6 +207,6 @@ CMD ["python3", "simple_mcp.py"]
 
 ---
 
-**🎯 Ready to revolutionize your bug bounty hunting with Amazon Q + HexStrike AI v3.0!**
+**🎯 Ready to revolutionize your bug bounty hunting with Amazon Q + AI Bug Bounty Framework v3.0!**
 
 *Made with ❤️ for the cybersecurity community*

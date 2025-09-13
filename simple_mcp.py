@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simple MCP for HexStrike AI - 100% Functional
+Simple MCP for AI Bug Bounty Framework - 100% Functional
 Uses Docker container directly
 """
 
@@ -10,9 +10,9 @@ import sys
 from datetime import datetime
 
 def execute_in_container(command):
-    """Execute command in HexStrike AI container"""
+    """Execute command in AI Bug Bounty Framework container"""
     try:
-        full_command = f"docker exec hexstrike-ai {command}"
+        full_command = f"docker exec ai-bugbounty-framework {command}"
         result = subprocess.run(
             full_command,
             shell=True,

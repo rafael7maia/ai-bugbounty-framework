@@ -1,4 +1,4 @@
-# 🏗️ HexStrike AI v3.0 - Architecture Overview
+# 🏗️ AI Bug Bounty Framework v3.0 - Architecture Overview
 
 ## 🎯 **SIMPLIFIED & OPTIMIZED ARCHITECTURE**
 
@@ -25,7 +25,7 @@
                       ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                  DOCKER CONTAINER                          │
-│                  (hexstrike-ai:v3)                         │
+│              (ai-bugbounty-framework:v3)                   │
 │  • 150+ Security Tools                                     │
 │  • Isolated execution environment                          │
 │  • Consistent results across platforms                     │
@@ -70,7 +70,7 @@ def execute_in_container(command):
 
 ### **3. Docker Container**
 ```dockerfile
-# hexstrike-ai:v3 - Security Tools
+# ai-bugbounty-framework:v3 - Security Tools
 FROM alpine:3.18
 
 # Core Tools Installed:
@@ -95,7 +95,7 @@ FROM alpine:3.18
 ```
 1. User → Amazon Q: "Scan testphp.vulnweb.com for SQL injection"
 2. Amazon Q → Simple MCP: python simple_mcp.py sqlmap_scan "url"
-3. Simple MCP → Docker: docker exec hexstrike-ai sqlmap -u "url"
+3. Simple MCP → Docker: docker exec ai-bugbounty-framework sqlmap -u "url"
 4. Docker → Tools: Execute sqlmap with parameters
 5. Tools → Docker: Return scan results
 6. Docker → Simple MCP: JSON formatted results
@@ -231,4 +231,4 @@ FROM alpine:3.18
 - **Cloud Deployment** - AWS/Azure support
 - **Team Collaboration** - Multi-user support
 
-**HexStrike AI v3.0 - Simplified, Optimized, and Amazon Q Ready! 🎉**
+**AI Bug Bounty Framework v3.0 - Simplified, Optimized, and Amazon Q Ready! 🎉**

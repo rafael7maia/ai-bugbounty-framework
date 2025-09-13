@@ -1,11 +1,11 @@
-# 🚀 HexStrike AI v3.0 - Quick Start
+# 🚀 AI Bug Bounty Framework v3.0 - Quick Start
 
 ## ⚡ 3-Step Setup
 
 ### 1. Build Docker Container
 ```bash
-docker build -t hexstrike-ai:v3 .
-docker run -d --name hexstrike-ai -p 8888:8888 hexstrike-ai:v3
+docker build -t ai-bugbounty-framework:v3 .
+docker run -d --name ai-bugbounty-framework -p 8888:8888 ai-bugbounty-framework:v3
 ```
 
 ### 2. Test MCP Script
