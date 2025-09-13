@@ -121,20 +121,20 @@ def mitre_attack_chain(target):
         }
     }
     
-    print(f"🎯 MITRE ATT&CK Chain Analysis: {target}")
+    print(f"MITRE ATT&CK Chain Analysis: {target}")
     
     # Reconnaissance Phase
-    print("📡 Phase 1: Reconnaissance (T1590, T1595)")
+    print("Phase 1: Reconnaissance (T1590, T1595)")
     results["mitre_attack_chain"]["reconnaissance"]["subfinder"] = subfinder_enum(target)
     results["mitre_attack_chain"]["reconnaissance"]["httpx"] = httpx_probe(target)
     
     # Discovery Phase  
-    print("🔍 Phase 2: Discovery (T1046, T1083)")
+    print("Phase 2: Discovery (T1046, T1083)")
     results["mitre_attack_chain"]["discovery"]["nmap"] = nmap_scan(target)
     results["mitre_attack_chain"]["discovery"]["gobuster"] = gobuster_scan(f"http://{target}")
     
     # Initial Access Phase
-    print("🚪 Phase 3: Initial Access (T1190)")
+    print("Phase 3: Initial Access (T1190)")
     results["mitre_attack_chain"]["initial_access"]["nuclei"] = nuclei_scan(f"http://{target}")
     
     return results

@@ -13,10 +13,10 @@ ENV PATH=$PATH:/usr/local/go/bin:/root/go/bin
 RUN apt-get update && apt-get install -y \
     curl wget git python3 python3-pip \
     build-essential golang-go \
-    nmap masscan rustscan \
+    nmap masscan \
     sqlmap nikto dirb gobuster \
     hydra john hashcat \
-    binwalk exiftool strings \
+    binwalk exiftool \
     dnsutils whois netcat-traditional \
     && rm -rf /var/lib/apt/lists/*
 
